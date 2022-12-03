@@ -1,0 +1,14 @@
+.card {
+  width: 18rem;
+  height: 14rem;
+  background-color: aqua;
+  position: relative;
+}
+.button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.card p {
+  text-decoration: none;
+}
