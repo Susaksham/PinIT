@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom'
 import Card from '../UI/Card'
 function Note(props) {
   const dispatch = useDispatch()
+  // to handler delete
   const onDeleteHandler = () => {
     dispatch(noteSliceActon.removingNote(`${props.id}`))
   }

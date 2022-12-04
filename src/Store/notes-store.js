@@ -9,6 +9,7 @@ const initialState = {
 
   inputString: '',
 }
+
 const noteSlice = createSlice({
   name: 'slicename',
   initialState: initialState,
