@@ -24,7 +24,9 @@ function App() {
           <Header></Header>
           <SearchBar></SearchBar>
           <Notes></Notes>
-          <Link to="/addNotes">Add notes</Link>
+          <Link to="/addNotes" className="button">
+            Add notes
+          </Link>
         </Route>
         <Route path="/addNotes" exact>
           <AddNotes></AddNotes>
