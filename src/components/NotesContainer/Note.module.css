@@ -50,8 +50,8 @@
 }
 @media (max-width: 400px) {
   .wrapper {
-    width: 40rem !important;
-    height: 30rem;
+    width: 48rem !important;
+    height: 33rem;
   }
   .description {
     width: 100%;
