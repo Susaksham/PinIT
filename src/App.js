@@ -45,7 +45,7 @@ function App() {
           <SearchBar></SearchBar>
           <Notes editNotes={editNotesHandler} idHandler={getId}></Notes>
           <button className="button" onClick={addNotes}>
-            Add notes
+            Add Notes
           </button>
           {addNote && <AddNotes removeAddNote={removeAddNote}></AddNotes>}
           {editNote && (
@@ -57,7 +57,7 @@ function App() {
         </Route>
 
         <Route path="*">
-          <p>this is done</p>
+          <p>404 Page</p>
         </Route>
       </Switch>
     </Container>

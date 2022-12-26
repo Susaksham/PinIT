@@ -46,7 +46,7 @@ function AddNotes(props) {
               <Button text="Cancel" onClick={props.removeAddNote}>
                 Cancel
               </Button>
-              <Button text="save"></Button>
+              <Button text="Save"></Button>
             </div>
           </form>
         </div>

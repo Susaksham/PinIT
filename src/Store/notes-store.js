@@ -54,7 +54,14 @@ const noteSlice = createSlice({
     },
     editNote(state, action) {
       console.log(action.payload)
-      const obj = { ...action.payload }
+      var today = new Date()
+      var dd = String(today.getDate()).padStart(2, '0')
+      var mm = String(today.getMonth() + 1).padStart(2, '0') //January is 0!
+      var yyyy = today.getFullYear()
+
+      today = mm + '/' + dd + '/' + yyyy
+
+      const obj = { ...action.payload, date: today }
       console.log(obj.id)
       const findIndex = state.notesArray.findIndex((element) => {
         return element.id === obj.id

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Lobster&family=Montserrat:ital@1&family=Rubik+Vinyl&display=swap');
+
 .header {
   width: 100%;
   display: flex;
@@ -6,6 +8,6 @@
   background-color: #8884ff;
   border-radius: 10px;
   padding: 1.6rem 3.2rem;
-
+  font-family: 'Lobster', cursive;
   /* border-radius: 2rem; */
 }

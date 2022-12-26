@@ -5,12 +5,17 @@
 }
 .button {
   box-sizing: border-box;
-  padding: 1rem 2rem;
+  padding: 1.6rem 3.2rem;
   border-radius: 10px;
   text-decoration: none;
   border: 10px;
   color: white;
-  background-color: red;
+  /* background-color: rgba(48, 201, 252, 0.808); */
+  /* background-color: rgba(48, 119, 252, 0.808); */
+  background-color: rgba(119, 48, 252, 0.808);
+  /* background-color: rgba(48, 75, 252, 0.808); */
+
+  font-size: 3rem;
 }
 .button:hover {
   transition: transform;

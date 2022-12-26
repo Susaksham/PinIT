@@ -35,7 +35,7 @@ const Notes = (props) => {
   if (filteredArray.length === 0) {
     return (
       <div className={classes.container}>
-        <p>No result found</p>
+        <p style={{ fontSize: '3rem', color: 'white' }}>No Result Found!</p>
       </div>
     )
   }
@@ -49,6 +49,7 @@ const Notes = (props) => {
               id={note.id}
               title={note.title}
               description={note.description}
+              date={note.date}
             ></Note>
           )
         })}

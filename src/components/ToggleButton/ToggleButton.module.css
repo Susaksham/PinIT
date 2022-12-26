@@ -11,6 +11,7 @@
   /* background-color: rgba(48, 119, 252, 0.808); */
   background-color: rgba(119, 48, 252, 0.808);
   /* background-color: rgba(48, 75, 252, 0.808); */
+  /* box-shadow: 2px 2px 1px 3px white; */
 }
 .button:hover {
   transition: transform;
