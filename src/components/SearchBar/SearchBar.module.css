@@ -7,9 +7,9 @@
   border: 1px solid black;
   border-radius: 2rem;
 
-  height: 4rem;
-  font-size: 2rem;
-  padding: 0rem 2rem;
+  height: 6.4rem;
+  font-size: 3.2rem;
+  padding: 0rem 3.2rem;
 }
 /* 
 .searchIcon {
@@ -23,15 +23,15 @@
   justify-content: center;
 } */
 .searchIcon i {
-  font-size: 1.5rem;
+  font-size: 2.4rem;
 }
 .search input {
   width: 100%;
-  border-radius: 2rem;
-  padding: 0 1rem;
+  border-radius: 3.2rem;
+  padding: 0 1.6rem;
   background-color: inherit;
   outline: none;
-  font-size: 1.1rem;
-  height: 2rem;
+  font-size: 1.76rem;
+  height: 3.2rem;
   border: none;
 }

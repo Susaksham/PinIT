@@ -31,8 +31,8 @@ function Note(props) {
                 alignItems: 'center',
                 justifyContent: 'center',
               }}
-              width="24px"
-              height="24px"
+              width="2.4rem"
+              height="2.4rem"
               viewBox="0 0 24 24"
             >
               <path
@@ -50,8 +50,8 @@ function Note(props) {
                 justifyContent: 'center',
               }}
               onClick={onDeleteHandler}
-              width="24px"
-              height="24px"
+              width="2.4rem"
+              height="2.4rem"
               viewBox="0 0 24 24"
             >
               <path
