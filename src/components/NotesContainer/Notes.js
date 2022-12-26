@@ -2,7 +2,7 @@ import React, { Fragment, useState } from 'react'
 import { useSelector } from 'react-redux'
 import Note from './Note'
 import classes from './Notes.module.css'
-const Notes = () => {
+const Notes = (props) => {
   const notesArray = useSelector((state) => state.notesData.notesArray)
   const inputString = useSelector((state) => state.notesData.inputString)
   console.log(notesArray)
@@ -14,10 +14,13 @@ const Notes = () => {
           {notesArray.map((note) => {
             return (
               <Note
+                idHandler={props.idHandler}
+                editNotes={props.editNotes}
                 key={note.id}
                 id={note.id}
                 title={note.title}
                 description={note.description}
+                date={note.date}
               ></Note>
             )
           })}

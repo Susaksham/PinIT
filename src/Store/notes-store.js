@@ -21,23 +21,30 @@ const noteSlice = createSlice({
       const id3 = Math.floor(Math.random() * 100)
       const id = `id${id1}${id2}${id3}`
       console.log(id)
-      localStorage.setItem(`${id}`, `${JSON.stringify(action.payload)}`)
-      console.log(localStorage.getItem(`${id}`))
       console.log(action.payload)
-      const newElement = { ...action.payload, id }
+      var today = new Date()
+      var dd = String(today.getDate()).padStart(2, '0')
+      var mm = String(today.getMonth() + 1).padStart(2, '0') //January is 0!
+      var yyyy = today.getFullYear()
+
+      today = mm + '/' + dd + '/' + yyyy
+      const newElement = { ...action.payload, id, date: today }
       state.notesArray.push(newElement)
+      localStorage.setItem(`notes`, `${JSON.stringify(state.notesArray)}`)
+      console.log(localStorage.getItem(`${id}`))
     },
     addingExistingNotes(state, action) {
       console.log(action.payload)
-      const newElement = { ...action.payload }
-      state.notesArray.push(newElement)
+      const newElement = [...action.payload]
+      state.notesArray = newElement
     },
     removingNote(state, action) {
       console.log(action.payload)
       const filterdArray = state.notesArray.filter((element) => {
         return element.id !== action.payload
       })
-      localStorage.removeItem(`${action.payload}`)
+
+      localStorage.setItem(`notes`, `${JSON.stringify([...filterdArray])}`)
 
       state.notesArray = [...filterdArray]
     },
@@ -53,11 +60,8 @@ const noteSlice = createSlice({
         return element.id === obj.id
       })
       console.log(findIndex)
-      localStorage.setItem(
-        `${obj.id}`,
-        `${JSON.stringify({ title: obj.title, description: obj.description })}`,
-      )
       state.notesArray[findIndex] = obj
+      localStorage.setItem(`notes`, `${JSON.stringify(state.notesArray)}`)
     },
   },
 })

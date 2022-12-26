@@ -7,4 +7,14 @@
   box-sizing: border-box;
   padding: 1rem 2rem;
   border-radius: 10px;
+  text-decoration: none;
+  border: 10px;
+  color: white;
+  background-color: red;
+}
+.button:hover {
+  transition: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in;
+  transform: scale(1.01);
 }

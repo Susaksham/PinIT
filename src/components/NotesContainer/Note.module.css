@@ -1,14 +1,50 @@
-.card {
+.wrapper {
   width: 18rem;
   height: 14rem;
-  background-color: aqua;
+  padding: 2rem 2rem 1rem 2rem;
+  box-sizing: border-box;
   position: relative;
+  background-color: #7f95d1;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.button {
-  position: absolute;
-  bottom: 0;
-  right: 0;
+.card {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
 }
-.card p {
-  text-decoration: none;
+.bottom {
+  display: flex;
+  position: relative;
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+.title {
+  width: 100%;
+  overflow-wrap: anywhere;
+}
+.description {
+  width: 100%;
+  overflow-wrap: anywhere;
+  display: -webkit-box;
+  overflow: hidden;
+  position: relative;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.date {
+  font-weight: bold;
+  top: 10%;
+}
+.buttons {
+  display: flex;
+  gap: 0.5rem;
 }

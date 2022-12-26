@@ -1,0 +1,63 @@
+.container {
+  box-sizing: border-box;
+  width: 100vw;
+  min-height: 100vh;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+}
+.firstChild {
+  position: fixed;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: rgba(37, 34, 34, 0.404);
+}
+.wrapper {
+  width: 30rem;
+  height: 30rem;
+  border-radius: 30px;
+  padding: 2rem;
+  background-color: rgb(30, 29, 29);
+  border: 1px solid white;
+  position: relative;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  gap: 2rem;
+}
+.wrapper form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  height: 100%;
+}
+.wrapper form textarea {
+  width: 100%;
+
+  resize: vertical;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  resize: none;
+  color: white;
+  border-bottom: 1px solid white;
+
+  overflow: auto;
+}
+.firstTextArea {
+  height: 3rem;
+  font-size: 1.6rem;
+}
+.secondTextArea {
+  height: calc(100% - 3rem);
+  font-size: 1rem;
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}

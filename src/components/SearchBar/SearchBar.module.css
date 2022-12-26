@@ -1,5 +1,7 @@
 .search {
   display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: darkgray;
   width: 100%;
   border: 1px solid black;
@@ -7,6 +9,7 @@
 
   height: 4rem;
   font-size: 2rem;
+  padding: 0rem 2rem;
 }
 /* 
 .searchIcon {
@@ -24,11 +27,11 @@
 }
 .search input {
   width: 100%;
-  border: none;
   border-radius: 2rem;
   padding: 0 1rem;
   background-color: inherit;
   outline: none;
   font-size: 1.1rem;
   height: 2rem;
+  border: none;
 }

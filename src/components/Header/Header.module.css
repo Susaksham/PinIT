@@ -3,7 +3,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: aqua;
+  background-color: #8884ff;
+  border-radius: 10px;
   padding: 1rem 2rem;
   /* border-radius: 2rem; */
 }
