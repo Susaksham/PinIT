@@ -27,9 +27,9 @@
 }
 @media (max-width: 400px) {
   * {
-    font-size: 30%;
+    font-size: 40%;
   }
   .wrapper {
-    padding: 2.4rem 5rem;
+    padding: 2.4rem 3rem;
   }
 }

@@ -48,3 +48,19 @@
   display: flex;
   gap: 0.8rem;
 }
+@media (max-width: 400px) {
+  .wrapper {
+    width: 40rem !important;
+    height: 30rem;
+  }
+  .description {
+    width: 100%;
+    overflow-wrap: anywhere;
+    display: -webkit-box;
+    overflow: hidden;
+    position: relative;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
