@@ -22,7 +22,7 @@
     font-size: 40%;
   }
   .wrapper {
-    padding: 2.4rem 15rem;
+    padding: 2.4rem 5rem;
   }
 }
 @media (max-width: 400px) {
@@ -30,6 +30,6 @@
     font-size: 30%;
   }
   .wrapper {
-    padding: 2.4rem 10rem;
+    padding: 2.4rem 5rem;
   }
 }
